@@ -27,11 +27,11 @@ public class FirstTest {
 
         @Test
         public void myFirstTest() {
-            driver.navigate().to("http://www.google.com");
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.findElement(By.name("q")).sendKeys("webdriver");
-            driver.findElement(By.name("btnG")).click();
-            wait.until(titleIs("webdriver - Поиск в Google"));
+            driver.navigate().to("http://localhost/litecart/en/");
+            //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.findElement(By.name("email")).sendKeys("webdriver");
+            /* driver.findElement(By.name("btnG")).click();
+            wait.until(titleIs("webdriver - Поиск в Google")); */
         }
 
 
